@@ -1,0 +1,115 @@
+.penguin {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  margin-top: 75px;
+  position: relative;
+  z-index: 4;
+  transition: all 1s ease-in-out 0ms;
+  transition-delay: 0ms;
+
+  & * {
+    position: absolute;
+  }
+
+  &:active {
+    transform: scale(150%, 150%);
+    cursor: not-allowed;
+  }
+
+  &__head {
+    width: 50%;
+    height: 45%;
+    background: linear-gradient(45deg, $penguin-skin, rgb(239, 240, 228));
+    border-radius: 70% 70% 65% 65%;
+    top: 10%;
+    left: 25%;
+    z-index: 1;
+  }
+
+  &__face {
+    width: 60%;
+    height: 70%;
+    background-color: $penguin-face;
+    border-radius: 70% 70% 60% 60%;
+    top: 15%;
+
+    &--left {
+      left: 5%;
+    }
+
+    &--right {
+      right: 5%;
+    }
+  }
+
+  &__chin {
+    width: 90%;
+    height: 70%;
+    background-color: $penguin-face;
+    top: 25%;
+    left: 5%;
+    border-radius: 70% 70% 100% 100%;
+  }
+
+  &__eye {
+    width: 15%;
+    height: 17%;
+    background-color: black;
+    top: 45%;
+    border-radius: 50%;
+
+    &--left {
+      left: 25%;
+    }
+
+    &--right {
+      right: 25%;
+    }
+  }
+
+  &__eye-lid {
+    width: 150%;
+    height: 100%;
+    background-color: $penguin-face;
+    top: 25%;
+    left: -23%;
+    border-radius: 50%;
+  }
+
+  &__blush {
+    width: 15%;
+    height: 10%;
+    background-color: pink;
+    top: 65%;
+    border-radius: 50%;
+
+    &--left {
+      left: 15%;
+    }
+
+    &--right {
+      right: 15%;
+    }
+  }
+
+  &__beak {
+    height: 10%;
+    background-color: $penguin-picorna;
+    border-radius: 50%;
+
+    &--top {
+      width: 20%;
+      top: 60%;
+      left: 40%;
+    }
+
+    &--bottom {
+      width: 16%;
+      top: 65%;
+      left: 42%;
+    }
+  }
+
+
+}
